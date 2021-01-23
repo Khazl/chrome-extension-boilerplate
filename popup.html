@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Extension Boilerplate</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width: 300px;
+        background: #d4d4d4;
+        border: 1px solid #606060;
+        padding: 0 10px 10px;
+      }
+
+      a {
+        cursor: pointer;
+        padding: 5px 10px;
+        margin: 0 10px 13px 0;
+        background: #2980b9;
+        color: #ffffff;
+        width: 120px;
+        display: inline-block;
+        text-align: center;
+      }
+
+      a:nth-child(odd) {
+        margin-right: 0;
+      }
+
+      a:hover {
+        background-color: #319ae0;
+      }
+
+      #status {
+        /* avoid an excessively wide status text */
+        font-family: monospace;
+        margin-top: 20px;
+        margin-left: 5px;
+        color: #5a5a5a;
+        font-size: 12px;
+        line-height: 16px;
+        height: 28px;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h2>Extension Boilerplate</h2>
+    <a id="startAction1">First Action</a>
+    <a id="startAction2">Second Action</a>
+    <div id="status">Waiting - Ready for action</div>
+  </body>
+</html>
